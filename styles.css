@@ -1,159 +1,76 @@
-{
-
+* {
   padding: 0;
-
   margin: 0;
-
   box-sizing: border-box;
-
 }
-
-
 
 body {
-
   font-family: Arial, sans-serif;
-
   text-align: center;
-
   margin-top: 80px;
-
   background-color: #000;
-
   color: #fff;
-
 }
-
-
 
 h1 {
-
   margin-bottom: 50px;
-
   font-size: 48px;
-
   font-weight: 700;
-
 }
-
-
 
 #game {
-
   display: inline-block;
-
 }
-
-
 
 .board {
-
   display: grid;
-
   grid-template-columns: repeat(3, 200px);
-
   grid-template-rows: repeat(3, 200px);
-
   gap: 0;
-
   margin-bottom: 50px;
-
 }
-
-
 
 .cell {
-
   border: none;
-
   font-size: 96px;
-
   font-weight: bold;
-
   display: flex;
-
   justify-content: center;
-
   align-items: center;
-
   cursor: pointer;
-
   user-select: none;
-
   transition: background-color 0.3s ease;
-
 }
-
-
 
 .cell:not(:nth-child(3n)) {
-
   border-right: 1px solid #fff;
-
 }
-
-
 
 .cell:nth-child(-n + 6):not(:nth-child(n + 7)) {
-
   border-bottom: 1px solid #fff;
-
 }
-
-
 
 .cell:hover {
-
   background-color: #222;
-
 }
-
-
-
-.cell:hover {
-
-  background-color: #222;
-
-}
-
-
 
 #status {
-
   font-size: 24px;
-
   margin-bottom: 20px;
-
   font-weight: 600;
-
 }
-
-
 
 #resetBtn {
-
   padding: 15px 30px;
-
   font-size: 20px;
-
   cursor: pointer;
-
   background-color: #333;
-
   border: 2px solid #fff;
-
   color: #fff;
-
   border-radius: 6px;
-
   transition: background-color 0.3s ease;
-
 }
 
-
-
 #resetBtn:hover {
-
   background-color: #555;
-
 }
